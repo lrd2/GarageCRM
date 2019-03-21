@@ -1,6 +1,7 @@
 package pl.coderslab.model;
 
 
+import java.sql.Date;
 import java.sql.Timestamp;
 
 public class Customer {
@@ -8,7 +9,7 @@ public class Customer {
     private int id;
     private String firstName;
     private String lastName;
-    private Timestamp birthday;
+    private Date birthday;
 
     public Customer() {
     }
@@ -37,11 +38,11 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    public Timestamp getBirthday() {
+    public Date getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Timestamp birthday) {
+    public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
 }
